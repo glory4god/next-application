@@ -1,0 +1,7 @@
+node_modules
+.yarn
+.next
+public
+coverage
+LICENSE
+.pnp.*

@@ -1,10 +1,10 @@
 {
-  "name": "tsconfig",
-  "version": "0.0.0",
+  "name": "@packages/tsconfig",
+  "version": "*",
   "private": true,
   "files": [
     "base.json",
     "nextjs.json",
-    "react-library.json"
+    "server.json"
   ]
 }
