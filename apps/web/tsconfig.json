@@ -1,12 +1,23 @@
 {
   "extends": "@packages/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/assets/*": ["src/assets/*"],
+      "@/backend/*": ["src/backend/*"],
+      "@/frontend/*": ["src/frontend/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/types": ["src/types"],
+      "@/types/*": ["src/types/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/*": ["src/*"]
+    }
+  },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/*.tsx"
+    "src/pages/*.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": [".next", ".turbo"]
 }

@@ -10,6 +10,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "prepare": "yarn install && yarn dlx @yarnpkg/sdks",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
